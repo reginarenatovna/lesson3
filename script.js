@@ -60,11 +60,7 @@ var optionalExpenses = {};
 function chooseOptExpenses(){
 	for ( let i=1; i<4; i++) {
 		let optional = prompt("Статья необязательных расходов?");
-		optionalExpenses = {
-		1: optional,
-		2: optional,
-		3: optional
-	}
+		optionalExpenses[i] = optional;
 }
 }
 chooseOptExpenses();
